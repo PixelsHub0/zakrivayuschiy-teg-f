@@ -15,17 +15,15 @@
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" var(--weight-regular);
-  background-image: repeating-linear-gradient(#d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #d3d3d3 100%);;
+  background-image: repeating-linear-gradient(#d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #d3d3d3 100%);
   background-color: #fff;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  inline-size: (23.438rem, 30.516vw + 16.285rem, 43.75rem)
 }
 
 .header {
@@ -100,28 +98,36 @@
   max-block-size: var(--img-height);
 }
 
-.filter-hue {
-  filter: hue-rotate(-90deg);
-}
-
-.filter-invert {
+.filter-colorfulness{
   filter: invert(0.7);
-}
-
-.filter-paints {
-  filter: saturate(158%) invert(0.9);
 }
 
 .filter-sepia {
   filter: sepia(80%);
 }
 
-.filter-invert {
-  filter: invert(0.7);
+.filter-contrast {
+  filter: contrast(20%);
+}
+
+.filter-saturate {
+  filter: saturate(158%);
+}
+
+.filter-sincerity {
+  filter: blur(0.15rem) contrast(70%) sepia(50%);
+}
+
+.filter-paints {
+  filter: brightness(200%);
 }
 
 .filter-dark {
   filter: brightness(200%) grayscale(0.8);
+}
+
+.filter-hue {
+  filter: hue-rotate(-90deg);
 }
 
 .label {
