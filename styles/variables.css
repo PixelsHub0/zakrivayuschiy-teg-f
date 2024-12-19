@@ -1,1 +1,25 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --main-font: 'Inter-Variable';
+    --accent-font: 'PressStart2P-Regular';
+    --weight-bold: 700;
+    --weight-regular: 400;
+    --main-color: #fff;
+    --accent-color: #000;
+    --contour-color: #000;
+    --fil-color: #ff0000;
+    --text-color: #000;
+    --text-color__button: #fff;
+    --text-size: 18px;
+    --main-text-line-height: 117%;
+    --border: 2px #000 solid;
+    --img-height: 696px;
+    --button-font-size: 14px;
+    --button-line-height: 90%;
+    --header-width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);/*clamp(375px, 100%, 700px);*/
+    --card-section-width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
+    --header-logo-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
+    --header-subtitle-size:  clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
+    --label-color-shadow: #fff;
+
+}
