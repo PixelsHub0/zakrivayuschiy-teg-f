@@ -98,7 +98,7 @@
   max-block-size: var(--img-height);
 }
 
-.filter-colorfulness{
+.filter-colorfulness {
   filter: invert(0.7);
 }
 
