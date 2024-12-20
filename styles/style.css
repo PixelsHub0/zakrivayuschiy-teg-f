@@ -53,11 +53,11 @@
   font-size: var(--header-logo-size);
   color: var(--text-color);
   font-weight: var(--weight-regular);
-  font-family: var(--accent-font),fantasy;
+  font-family: var(--accent-font), fantasy, sans-serif;
 }
 
 .subtitle-header {
-  font-family: var(--accent-font),fantasy;
+  font-family: var(--accent-font), fantasy, sans-serif;
   font-size: var(--header-subtitle-size);
   color: var(--text-color);
   font-weight: var(--weight-regular);
@@ -136,7 +136,7 @@
   position: absolute;
   top: 25px;
   right: 25px;
-  font-family: var(--accent-font),fantasy;
+  font-family: var(--accent-font), fantasy, sans-serif;
   mix-blend-mode: hard-light;
   font-size: var(--button-font-size);
   text-transform: uppercase;
@@ -261,19 +261,18 @@
   transition: fill 0.3s linear 0.3s;
 }
 
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
 .like-icon:hover .core {
   fill: var(--accent-color);
   transition: fill 0.3s linear;
-  
 }
 
 .like-icon:active .core {
   fill: var(--fil-color);
-  transition: fill 0.3s linear;
-}
-
-.main-body {
-  fill: transparent;
   transition: fill 0.3s linear;
 }
 
@@ -292,14 +291,14 @@
   transition: fill 0.3s linear 0.06s;
 }
 
-.like-icon.is-liked .main-body {
-  transition: 0.3s linear 0.05s;
+.like-icon.is-liked .core {
   fill: var(--fil-color);
+  transition: fill 0.3s linear;
 }
 
-.like-icon.is-liked .core {
-  transition: fill 0.3s linear;
+.like-icon.is-liked .main-body {
   fill: var(--fil-color);
+  transition: 0.3s linear 0.05s;
 }
 
 .sparks {
@@ -352,7 +351,7 @@
 }
 
 .dialog-opened-text {
-  font-family: var(--accent-font),fantasy;
+  font-family: var(--accent-font), fantasy, sans-serif;
   line-height: 150%;
   text-transform: uppercase;
   font-size: var(--button-font-size);
